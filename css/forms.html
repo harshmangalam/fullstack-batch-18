@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        section {
+            max-width: 1200px;
+            margin: auto;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+
+        form {
+            width: 600px;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            margin-top: 42px;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            padding: 36px;
+            border-radius: 16px;
+        }
+
+        .input-container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        input {
+            padding: 12px 8px;
+            border-radius: 8px;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+        }
+
+        input:focus {
+            outline: 2px solid lightblue;
+        }
+
+        /* 
+        input:focus {
+            border: 3px solid #555;
+        } */
+
+        label {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        input[type="submit"] {
+            background-color: seagreen;
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>Login Form</h1>
+
+        <form>
+            <div class="input-container">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username">
+            </div>
+            <div class="input-container">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+            </div>
+
+            <input type="submit" value="Log in">
+        </form>
+    </section>
+</body>
+
+</html>
